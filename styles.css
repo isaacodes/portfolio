@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&family=Roboto:wght@100;300;400;500&display=swap');
+@import url('mobile.css');
+
+/* Theme Color: #C0EBC3 */
+
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 65px;
+    background: transparent;
+    mix-blend-mode: exclusion;
+    color: #fff;
+    font-family: 'Raleway', serif;
+    font-weight: 700;
+    width: 100vw;
+    z-index: 2;
+}
+nav a.name {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    font-size: 3.5em;
+    transform: translate(-50%, -50%);
+    font-family: "Raleway", serif;
+    font-weight: 400;
+    padding: 8px;
+    transition: all 0.3s ease, top 0.2s ease;
+}
+nav a.motto {
+    position: absolute;
+    top: 60vh;
+    left: 50vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    transform: translate(-50%, -50%);
+    border: 3px solid #ccc;
+    padding: 8px;
+    color: #ccc;
+    transition: all 0.3s ease, top 0.2s ease;
+}
+nav.trigger a.name {
+    font-size: 20px;
+    top: calc((65px / 2) - 10px);
+    transform: translateY(-50%);
+    left: 2vw;
+    transition: all 0.2s ease, top 0.3s ease;
+}
+nav.trigger a.motto {
+    font-size: 15px;
+    top: calc((65px / 2) + 10px);
+    left: 2vw;
+    transform: translateY(-50%);
+    transition: all 0.2s ease, top 0.3s ease;
+    border-color: transparent;
+}
+
+nav .button-container {
+    float: right;
+    margin-right: 4vw;
+    line-height: 65px;
+}
+nav .button-container a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-left: 3vw;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+nav .button-container a.em {
+    border: 2px solid #fff;
+    padding: 8px;
+}
+
+/* Sections */
+.section {
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+.section_beginning {
+    background: #C0EBC355;
+    backdrop-filter: blur(5px);
+}
+.section_one {
+    background: #000000aa;
+}
+.section_two {
+    background: #31F99566;
+}
+.section_three {
+    background: #ffffff99;
+}
+.section_four {
+    background: #0211C2aa;
+    backdrop-filter: contrast(30%);
+}
+.section_six {
+    background: #C0EBC399;
+    backdrop-filter: blur(5px);
+}
+
+.text-wrapper {
+    width: 25vw;
+    float: left;
+    position: relative;
+    top: 50vh;
+    left: -3vw;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+.section.display .text-wrapper {
+    left: 4vw;
+    opacity: 1;
+}
+.text-wrapper .title {
+    font-family: 'Raleway', serif;
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 500;
+}
+.text-wrapper p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ccc;
+}
+.text-wrapper .title a {
+    color: #fff;
+}
+.text-wrapper p a {
+    color: #ccc;
+}
+
+.display_img {
+    float: right;
+    position: relative;
+    top: 50%;
+    right: 16vw;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.section.display .display_img {
+    opacity: 1;
+    right: 5vw;
+}
+.section.dark .text-wrapper .title {
+    color: #111;
+}
+.section.dark .text-wrapper p {
+    color: #444;
+}
+.section.dark .text-wrapper p a {
+    color: #444;
+}

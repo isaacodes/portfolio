@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="scripts.js"></script>
+    <title>Isaac Maddox</title>
+</head>
+<body>
+    <nav>
+        <a class="name">Isaac Maddox</a>
+        <a class="motto">Coding Beyond Amazing</a>
+        <div class="button-container">
+            <a class="nav-button" href="about.html">about</a>
+            <a class="nav-button em" href="services.html">Services</a>
+        </div>
+    </nav>
+    <div class="section section_beginning"></div>
+    <div class="section section_one">
+        <div class="text-wrapper">
+            <span class="title">Ruckel Web Design</span>
+            <p>
+                I made this project mainly because I was bored in the Web Design class that I was taking (I was done with the assignment and had a lot of time left). I noticed that the high school web design class had a website, but ours didn't. I decided to solve this problem, if even for myself. I enjoyed making this project and even got to show it off to a DIT class at school. <a href="https://isaacodes.github.io/ruckelwebdesign/">View project here</a>
+            </p>
+        </div>
+        <img class="display_img" src="images/ruckelwebdesign.png" height="358" width="767" alt="Ruckel Web Design project" />
+    </div>
+    <div class="section section_two dark">
+        <div class="text-wrapper">
+            <span class="title">"Jeopardy!"</span>
+            <p>
+                I made this project because my language arts class played a game of "Jeopardy!" for review, but I noticed that the page was littered with ads and the game was small on the screen and, therefore, hard to read. I then made this program in my spare time at home for my Language Arts teacher. <a href="https://isaacodes.github.io/Jeapordy/index.html">View project here</a>
+            </p>
+        </div>
+        <img class="display_img" src="Images/jeopardy.png" height="359" alt="Jeopardy! Website Screenshot" />
+    </div>
+
+    <div class="section section_three dark">
+        <div class="text-wrapper">
+            <span class="title">Simplistic Design</span>
+            <p>
+                This is one of the projects that I am very proud of. Simplistic Design is an CSS and JavaScript  library to make the process of creating a web site a lot easier. Simplistic Design is an ongoing project, constantly evolving with web trends. Simplistic Design is, technically, customizable, it just won't be easy in the either compacted or thousand-line long CSS stylesheets. <a href="https://isaacodes.github.io/simplisticdesign" target="_blank">View project here</a>
+            </p>
+        </div>
+        <img class="display_img" src="images/sd.png" height="358" />
+    </div>
+    <div class="section section_four">
+        <div class="text-wrapper">
+            <span class="title">A little about me</span>
+            <p>
+                I am a <span class="age">__</span> year-old who lives in Florida, and has a passion for Web Development. You can read more about me (if you want to) <a href="about.html">here</a>.
+            </p>
+        </div>
+        <img class="display_img" src="images/collage.png" alt="A couple of pictures that represent me" height="500" />
+    </div>
+    <div class="section section_six dark">
+        <div class="text-wrapper">
+            <span class="title">Contact Me</span>
+            <p>
+                You can contact me at <a href="mailto:isaacmaddox05@gmail.com">isaacmaddox05@gmail.com</a>, or by leaving a comment on one of my <a href="https://codepen.io/esac" target="_blank">CodePen</a> pens. Hopefully in the future I will have a way to add a comment feature to this page (or the blog I plan to open), but for now, email and CodePen will have to do. :D
+            </p>
+        </div>
+        <img class="display_img" width="347" src="images/personal.jpeg" alt="Ruckel Web Design project" />
+    </div>
+    <script>
+        var d = new Date();
+        var day = d.getDate();
+        var year = d.getFullYear();
+        var bday = 29;
+        var byear = 2005;
+        var calcyear = year - byear;
+        var calcday = bday - day;
+        if (calcday > 0) {
+            calcyear--;
+        }
+        $("span.age").html(calcyear);
+    </script>
+</body>
+</html>
