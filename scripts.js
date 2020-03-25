@@ -33,6 +33,11 @@ $(document).ready(function() {
                             scrollTop: bh * 4,
                         }, 300);
                         break;
+                    case 5:
+                        $("body, html").animate({
+                            scrollTop: bh * 5,
+                        }, 300);
+                        break;
                 }
                 currentslide--;
                 if (currentslide < 0) {
@@ -66,10 +71,15 @@ $(document).ready(function() {
                             scrollTop: bh * 5,
                         }, 300);
                         break;
+                    case 6:
+                        $("body, html").animate({
+                            scrollTop: bh * 6,
+                        }, 300);
+                        break;
                 }
                 currentslide++;
-                if (currentslide > 5) {
-                    currentslide = 5;
+                if (currentslide > 6) {
+                    currentslide = 6;
                 }
             }
             able = false;
