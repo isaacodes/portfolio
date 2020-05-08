@@ -2,88 +2,151 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Isaac Maddox">
+    <meta name="keywords" content="Isaac, Maddox, coding, web design, portfolio, functional">
+    <meta name="description" content="Isaac Maddox: Brilliant Design and Amazing Functionality. Guranteed.">
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="scripts.js"></script>
+    <link rel="shortcut icon" href="images/favicon.ico">
     <title>Isaac Maddox</title>
 </head>
 <body>
+    <header>
+        <p>Hello. I'm <span>Isaac Maddox</span><br/>A Teenage Web Developer With a Passion</p>
+    </header>
     <nav>
-        <a class="name">Isaac Maddox</a>
-        <a class="motto">Coding Beyond Amazing</a>
+        <div class="name">Isaac Maddox</div>
         <div class="button-container">
-            <a class="nav-button" href="about.html">about</a>
+            <a href="#one">Stuff I've Made</a>
+            <a href="#two">My Principles</a>
+            <a href="#three">About Me</a>
+            <a href="#four">Contact</a>
         </div>
+        <!-- <button class="expand-nav">
+            <div class="bar" id="one"></div>
+            <div class="bar" id="two"></div>
+            <div class="bar" id="three"></div>
+        </button> -->
     </nav>
-    <div class="section section_beginning" id="0"></div>
-    <div class="section section_one" id="1">
-        <div class="text-wrapper">
-            <span class="title">Ruckel Web Design</span>
-            <p>
-                I made this project mainly because I was bored in the Web Design class that I was taking (I was done with the assignment and had a lot of time left). I noticed that the high school web design class had a website, but ours didn't. I decided to solve this problem, if even for myself. I enjoyed making this project and even got to show it off to a DIT class at school. <a href="https://isaacodes.github.io/ruckelwebdesign/">View project here</a>
-            </p>
-        </div>
-        <img class="display_img" src="images/ruckelwebdesign.png" height="358" width="767" alt="Ruckel Web Design project" />
-    </div>
-    <div class="section section_two dark" id="2">
-        <div class="text-wrapper">
-            <span class="title">"Jeopardy!"</span>
-            <p>
-                I made this project because my language arts class played a game of "Jeopardy!" for review, but I noticed that the page was littered with ads and the game was small on the screen and, therefore, hard to read. I then made this program in my spare time at home for my Language Arts teacher. <a href="https://isaacodes.github.io/Jeapordy/index.html">View project here</a>
-            </p>
-        </div>
-        <img class="display_img" src="images/jeopardy.png" height="359" alt="Jeopardy! Website Screenshot" />
-    </div>
+    <article>
+        <section id="one">
+            <h2>Some of My Works</h2>
+            <div class="underline"></div>
+            <div class="projects">
+                <div class="project" id="sd">
+                    <div class="cover">
+                        <div class="wrap">
+                            <h3>Simplistic Design</h3>
+                            <p>
+                                Ongoing project. My take on Google's Material Design. This is open source and free to use. I have been working on this project for a long time, as you can see by the dates on the blog page. <em>Works on mobile</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="section section_three dark" id="3">
-        <div class="text-wrapper">
-            <span class="title">Simplistic Design</span>
-            <p>
-                This is one of the projects that I am very proud of. Simplistic Design is an CSS and JavaScript  library to make the process of creating a web site a lot easier. Simplistic Design is an ongoing project, constantly evolving with web trends. Simplistic Design is, technically, customizable, it just won't be easy in the either compacted or thousand-line long CSS stylesheets. <a href="https://isaacodes.github.io/simplisticdesign" target="_blank">View project here</a>
-            </p>
-        </div>
-        <img class="display_img" src="images/sd.png" height="358" alt="Simplistic Design Elements Page" />
-    </div>
-    <div class="section section_five dark" id="4">
-        <div class="text-wrapper">
-            <span class="title">Destin Bay Fish</span>
-            <p>
-                This project is the first project that I made for someone. One of my teachers at school has a side business for charter fishing, and I looked at his website that he had. I thought the website could be improved, and told him this. He challenged me to improve his website. I spent around 4 days coding and designing this, and also took the time to make it mobile friendly.
-            </p>
-        </div>
-        <img class="display_img" src="images/fishing.png" height="358" alt="Destin Bay Fish" />
-    </div>
-    <div class="section section_four" id="5">
-        <div class="text-wrapper">
-            <span class="title">A little about me</span>
-            <p>
-                I am a <span class="age">__</span> year-old who lives in Florida, and has a passion for Web Development. You can read more about me (if you want to) <a href="about.html">here</a>.
-            </p>
-        </div>
-        <img class="display_img" src="images/collage.png" alt="A couple of pictures that represent me" height="500" />
-    </div>
-    <div class="section section_six dark" id="6">
-        <div class="text-wrapper">
-            <span class="title">Contact Me</span>
-            <p>
-                You can contact me at <a href="mailto:isaacmaddox05@gmail.com">isaacmaddox05@gmail.com</a>, or by leaving a comment on one of my <a href="https://codepen.io/esac" target="_blank">CodePen</a> pens. Hopefully in the future I will have a way to add a comment feature to this page (or the blog I plan to open), but for now, email and CodePen will have to do. :D
-            </p>
-        </div>
-        <img class="display_img" width="347" src="images/personal.jpeg" alt="Ruckel Web Design project" />
-    </div>
-    <script>
-        var d = new Date();
-        var day = d.getDate();
-        var year = d.getFullYear();
-        var bday = 29;
-        var byear = 2005;
-        var calcyear = year - byear;
-        var calcday = bday - day;
-        if (calcday > 0) {
-            calcyear--;
-        }
-        $("span.age").html(calcyear);
-    </script>
+                <div class="project" id="rwd">
+                    <div class="cover">
+                        <div class="wrap">
+                            <h3>Ruckel Web Design</h3>
+                            <p>
+                                I made this project for my Web Design teacher in 8th grade. It is a basic overview of the web design course. I even got to show this website to some people in the class next door to get some of the seventh graders to take the course the next school year.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project" id="dbf">
+                    <div class="cover">
+                        <div class="wrap">
+                            <h3>Destin Bay Fishing</h3>
+                            <p>
+                                I made this web page for my 7th grade civics teacher, who also had his own fishing company. I saw his website and commented on some things wrong with it, and he told me to make something better. He didn't end up using it, but he liked it! <em>Works on mobile</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="two">
+            <div id="card-wrapper">
+                <div class="card">
+                    <img src="images/rocketship.png" alt="Rocket Ship" />
+                    <div class="title">Speed</div>
+                    <p>
+                        All of my web pages are fast. This means no unnecessary load time, quick and snappy transitions, and all while maintaining a pleasant user experience, and keeping good design.
+                    </p>
+                </div>
+                <div class="card" style="transition-delay: 0.2s">
+                    <img src="images/responsive.png" alt="Computer" />
+                    <div class="title">Responsive</div>
+                    <p>
+                        All of the projects I undertake, unless only temporary or just for fun, are responsive, meaning that they will work on any device. This is important to maintain a good user experience.
+                    </p>
+                </div>
+                <div class="card" style="transition-delay: 0.4s">
+                    <img src="images/design.png" alt="Design Layout" />
+                    <div class="title">Design</div>
+                    <p>
+                        As far as design goes, I stick to a relatively modern and flat design for my webpages. I add depth with the use of layers, parallax, and shadows. Colors are based on a pallete.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="three">
+            <h2>A Little About Me</h2>
+            <div class="underline"></div>
+            <img src="images/mea.png" alt='Me' />
+            <div class="text">
+                <h2>Who is this guy?</h2>
+                <p>
+                    I am Isaac Maddox, a teenage web developer originally from Memphis, Tennessee. I first started programming when I was 9. The first programming languages I leared were HTML and CSS. I learned JavaScript when my dad saw a word scramble program I made using HTML hyperlinks and CSS, and decided that I was ready. I have been programming ever since, and I still thoroughly enjoy it.
+                </p>
+                <p>
+                    I know 4 programming languages now, HTML, CSS, JavaScript (using jQuery), and PHP (phpMyAdmin). You can see my "skills" to the left, along with how confident I am in them.
+                </p>
+            </div>
+            <div class="skills">
+                <div class="name">HTML</div>
+                <div class="bar">
+                    <div class="inner-bar">96%</div>
+                </div><br/>
+                <div class="name">CSS</div>
+                <div class="bar">
+                    <div class="inner-bar">89%</div>
+                </div><br/>
+                <div class="name">jQuery</div>
+                <div class="bar">
+                    <div class="inner-bar">79%</div>
+                </div><br/>
+                <div class="name">PHP</div>
+                <div class="bar">
+                    <div class="inner-bar">46%</div>
+                </div><br/>
+                <div class="name">Bootstrap</div>
+                <div class="bar">
+                    <div class="inner-bar">58%</div>
+                </div><br/>
+                <div class="name">UI Design</div>
+                <div class="bar">
+                    <div class="inner-bar">62%</div>
+                </div><br/>
+                <div class="name"><a href="https://www.figma.com/" target="_blank">Figma</a></div>
+                <div class="bar">
+                    <div class="inner-bar">53%</div>
+                </div>
+            </div>
+        </section>
+        <section id="four">
+            <div class="four-wrap">
+                <h2>Get in Touch</h2>
+                <div class="underline"></div>
+                <p>
+                    To contact me, you can use one of many ways. The fastest way to get hold of me is to email me at <a href="mailto:isaacmaddox05@gmail.com">isaacmaddox05@gmail.com</a>. Alternatively, you can leave a message on one of my <a href="https://codepen.io/esac" target="_blank">CodePen</a> pens. I will occasionally check these, and will make sure to get back to you.
+                </p>
+            </div>
+        </section>
+    </article>
 </body>
 </html>
